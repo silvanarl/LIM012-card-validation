@@ -6,9 +6,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <h1>Tarjeta de Crédito Válida</h1>
+    </header>
+    <main>
+      <div id="container1">
+      <h2>Hola usuario, ¿quieres validar tu tarjeta?</h2>
+      <input type="button" id="botonSí" value="Sí"/>
+      </div>
+      <div id="container2">
+        <p>Por favor ingresa un número de tarjeta(16 dígitos)</p>
+        <input type="text" id="cardNumber">
+        <input type="button" value="Validar" id =""/>
+      </div>
+      <div id="container3">
+        <p>Estimado usuario tu tarjeta N° ${} es </p>  <!--Aquí debería ir valido o invalido por function -->
+      </div>
+    </main>
+    <footer>
+      Este es un footer
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
