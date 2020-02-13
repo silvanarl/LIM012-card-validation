@@ -1,5 +1,4 @@
-const validator = (cardNumber) => {
-    console.log(cardNumber);
-};
+const validator = {
 
+};
 export default validator;
