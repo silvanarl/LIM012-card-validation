@@ -15,43 +15,51 @@ botonSí.addEventListener("click",()=>{
     console.log("hola");
 });
 
-
-
 let validarCardNumber = document.getElementById("validarCardNumber");
 validarCardNumber.addEventListener("click",obtenerCardNumber);
-let cardNumber = document.getElementById("idCardNumber");
-
 
 
 function obtenerCardNumber(){
-    let cardNumberValor = cardNumber.value; 
-    let cardNumberInvertida = [];
-    let e = 0;
-    for(let i= cardNumberValor.length-1; i>=0;--i){
-        cardNumberInvertida[e] = cardNumberValor[i]*1;
-        e = e+1;
-
-    }
-    console.log(cardNumberInvertida);
+    let cardNumber = document.getElementById("idCardNumber").value;
+    let size = cardNumber.length;
+    let lastPosition = size-1;
     
+    for(let i=0; i<cardNumber.length;i++){
+        console.log(cardNumber[i]);
+        }
+    let invertido = '';
+    for(let i= lastPosition; i>=0; i--){
+        console.log(invertido = cardNumber[i]);
+    }
+
     let cardDouble =[];
-    for(let i=0; i<=cardNumberInvertida.length;i++){
-        if(i%2 !== 0){
-             cardDouble = cardNumberInvertida[i.value]*2;
-             cardNumberInvertida[1] = cardDouble;
-        }
-        else{
-        }
+    for(let i=0; i<=invertido.length;i++){
+    if([i]%2 !== 0){
+            cardDouble = invertido*2;
+            invertido = cardDouble;
+    }
+    else{
+        
+    }
     }
     console.log(cardDouble);
+
+    let cadenaOculta = '';
+    let lastFourPosition = size-5
+    if(cardNumber.length>=1){
+        for(let i= lastPosition; i<=lastFourPosition; i--){
+            if(Number.isInteger(parseInt(cardNumber[i]))){
+                if(i<5){
+                    cadenaOculta = cadenaOculta + cardNumber[i];
+                }
+                else{
+                    cadenaOculta = cadenaOculta + '#';
+                }
+            }
+        }
+    }
+    console.log(cadenaOculta);
 }
 obtenerCardNumber();
-
-
-// container1.classList.remove("container1");
-// container2.classList.add("container2");
-// container3.classList.add("hide");
-
-
 
 console.log(validator);
