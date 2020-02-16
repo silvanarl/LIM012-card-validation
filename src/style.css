@@ -25,8 +25,17 @@ footer{
  height: 30px;
  color: rgb(179, 176, 176)
 }
-.color {
-    color: rgb(205, 214, 214);
+.class1 {
+    color: rgb(47, 49, 49);
+    font: status-bar;
+}
+.class2 {
+    color: rgb(47, 49, 49);
+    font: status-bar;
+}
+.class3 {
+    color: rgb(47, 49, 49);
+    font: status-bar;
 }
 .size {
     width: 100%
