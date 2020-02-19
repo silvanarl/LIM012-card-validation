@@ -40,16 +40,16 @@ const validator = {
         return result;
     },
     maskify:(creditCardNumber)=>{
-        let xmaskify = '';
+        let xMaskify = '';
         for(let i=0 ; i<creditCardNumber.length;i++){
             if(i<=creditCardNumber.length-5){
-                xmaskify = xmaskify + '#';
+                xMaskify = xMaskify + '#';
             }
             else{
-                xmaskify = xmaskify + creditCardNumber[i];
+                xMaskify = xMaskify + creditCardNumber[i];
             } 
         }
-        return xmaskify
+        return xMaskify
     }
 };
 export default validator;

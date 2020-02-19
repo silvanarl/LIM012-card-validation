@@ -8,6 +8,9 @@ let text;
 let validarCardNumber = document.getElementById("validarCardNumber");
 validarCardNumber.addEventListener("click",()=>{
 let ingresado =document.getElementById("idCardNumber").value;
+if(ingresado==0){
+    alert('Por favor ingresa un número de tarjeta.')
+}
 let resultado1 = validator.isvalid(ingresado);
 
 if(resultado1===true){
