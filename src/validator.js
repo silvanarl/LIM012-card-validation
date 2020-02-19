@@ -38,7 +38,6 @@ const validator = {
         else{
         }
         return result;
-        console.log(result);
     },
     maskify:(creditCardNumber)=>{
         let xmaskify = '';
@@ -50,7 +49,6 @@ const validator = {
                 xmaskify = xmaskify + creditCardNumber[i];
             } 
         }
-        console.log(xmaskify);
         return xmaskify
     }
 };
