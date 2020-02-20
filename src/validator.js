@@ -4,8 +4,6 @@ const validator = {
         for(let i= creditCardNumber.length-1; i>=0;i--){
             newCardNumber.push(parseInt(creditCardNumber[i]));
         }
-        console.log(newCardNumber);
-
         let newCardNumberPair =[];
         let newCardNumberOdd =[];
         for(let i= 0; i<newCardNumber.length; i++){
@@ -16,8 +14,6 @@ const validator = {
                 newCardNumberPair.push(newCardNumber[i]*1);
             }
         }
-        console.log('Nuevo array x2 invertido',newCardNumberPair);
-
         let multiply=[];
         for(let i=0; i<newCardNumberPair.length; i++){
             if(newCardNumberPair[i]>=10){
@@ -27,8 +23,6 @@ const validator = {
                 multiply.push(newCardNumberPair[i]*1);
             }
         }
-        console.log(multiply);
-
         const totalSum = multiply.reduce((sum, current) => sum + current, 0);
         console.log('Suma de todo es:',totalSum);
         let result = false;
