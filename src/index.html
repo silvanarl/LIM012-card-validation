@@ -7,31 +7,33 @@
   </head>
   <body>
     <header>
-      <h1>Tarjeta de Crédito Válida</h1>
+      <h1>VALIDA TU TARJETA DE CRÉDITO</h1>
     </header>
     <main>
+      <div class="fondoBg">
         <div class="class1" id="container1">
           <p>
           <h2>¿Te gustaría saber si la tarjeta de crédito que aceptaste por teléfono es válida?</h2>
           <p>Últimamente hemos sido testigos del incrementado de la cantidad de créditos de consumo que 
             las entidades bancarias ofrecen a los usuarios vía telefónica. Pero, ¿cómo saber si ese número 
              es válido? Es por ello que ponemos a tu disposición esta herramienta que utiliza el algoritmo 
-             de Luhn, para que puedas saberlo.</p>
+             de Luhn, para que puedas saberlo.
+          </p>
           <input type="button" id="continue" value="Continuar"/>
           </p>
         </div>
-      <div class="class2" id="container2">
-        <p>Por favor ingresa un número de tarjeta (16 dígitos).</br></br>
+      <div class="ocultar" id="container2">
+        <p>Por favor ingresa un número de tarjeta (16 dígitos).<br><br>
         <input type="text" id="idCardNumber" maxlength="16" placeholder="Aquí tu Nº de Tarjeta" value=""><br><br>
         <input type="button" value="Validar" id ="validarCardNumber"/>
         </p>
       </div>
-      <div class="class3" id="container3">
-        <p></p>  
+      <div class="ocultar" id="container3">  
       </div>
+    </div>
     </main>
     <footer>
-      Este es un footer
+      <p>Todos los derechos reservados.     2020</p>
     </footer>
     <script src="index.js" type="module"></script>
   </body>

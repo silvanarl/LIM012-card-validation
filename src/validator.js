@@ -1,11 +1,10 @@
 const validator = {
-    isvalid:(creditCardNumber)=>{
-            let newCardNumber= [];
+    isValid:(creditCardNumber)=>{
+        let newCardNumber= [];
         for(let i= creditCardNumber.length-1; i>=0;i--){
             newCardNumber.push(parseInt(creditCardNumber[i]));
         }
         let newCardNumberPair =[];
-        let newCardNumberOdd =[];
         for(let i= 0; i<newCardNumber.length; i++){
             if(i%2!==0){
                 newCardNumberPair.push(newCardNumber[i]*2);
@@ -23,27 +22,24 @@ const validator = {
                 multiply.push(newCardNumberPair[i]*1);
             }
         }
-        const totalSum = multiply.reduce((sum, current) => sum + current, 0);
-        console.log('Suma de todo es:',totalSum);
+        let totalSum = multiply.reduce((sum, current) => sum + current, 0);
         let result = false;
         if(totalSum%10===0){
             result = true;
         }
-        else{
-        }
         return result;
     },
     maskify:(creditCardNumber)=>{
-        let xMaskify = '';
-        for(let i=0 ; i<creditCardNumber.length;i++){
-            if(i<=creditCardNumber.length-5){
-                xMaskify = xMaskify + '#';
-            }
-            else{
-                xMaskify = xMaskify + creditCardNumber[i];
-            } 
+    let maskify = '';
+    for(let i=0 ; i<creditCardNumber.length;i++){
+        if(i<=creditCardNumber.length-5){
+            maskify = maskify + '#';
         }
-        return xMaskify
+        else{
+            maskify = maskify + creditCardNumber[i];
+        } 
+    }
+    return maskify
     }
 };
 export default validator;

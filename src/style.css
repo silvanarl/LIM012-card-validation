@@ -1,55 +1,64 @@
 head{
     align-content: center;
-    
-    
-
 }
 h1{
-    width: 80%;
+    width: 94%;
     font: status-bar;
     font-size: 3em;
     text-align: center;
     margin: 0 auto;
     padding: 3%;
+    background-color: antiquewhite;
+    color: rgb(20, 20, 66);
+}
+h2{
+    text-align: justify;
+    color: rgb(23, 12, 70);
 }
 footer{
-    background: black;
+    background: rgb(175, 175, 175);
     position: absolute;
     bottom: 0;
-    width: 99%;
-    height: 15pt;
+    width: 94%;
+    height: 20px;
     font: status-bar;
-    color: rgb(146, 52, 52)
+    color: rgb(10, 10, 10)
  }
 .class1 {
-    background-color: antiquewhite;
-    color: rgb(47, 49, 49);
     font: status-bar;
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
     line-height: 1.5em;
-    width: 80%;
+    width: 93%;
     font-size: 1.5em;
+    background-color: rgb(195, 195, 196);
+    box-sizing: border-box;
 }
 .class1 p{
-    font-size: 12pt;
+    font-size: 14pt;
     line-height: 1.5em;
     text-align: justify;
     padding: 3pt;
+    color: rgb(12, 11, 11);
 }
-.class2 {
-    background-color: rgb(135, 173, 104);
-    color: rgb(47, 49, 49);
-    font: status-bar;
-    font-size: 5em;
-    padding:5px;
-    padding-left: 20px;
-    width: 70%;
-    display: none;
+.fondoBg{
+    background-color: rgb(162, 232, 243);
+    width: 1336px;
+    height: 450px;
+}
+.ocultar {  
+    display: none; 
+}
+#container2{
     
+    color: rgb(47, 49, 49);
+    padding:30px;
 }
-
-.class3 {
+#container2 p{
+    font: status-bar;
+    font-size: 1.5em;
+}
+#container3{
     color: rgb(47, 49, 49);
     font: status-bar;
 }
@@ -62,7 +71,7 @@ footer{
 }
 input{
     width: 70px;
-    height: 32px;
+    height: 30px;
     cursor: pointer;
 }
 input[type="text"]{
@@ -76,4 +85,10 @@ p{
     font-size:30px;
     font: status-bar
     
+}
+p footer{
+    font-size:12pt;
+    font: status-bar;
+    color: rgb(0, 0, 0);
+    text-align: justify;
 }
