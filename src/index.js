@@ -33,12 +33,11 @@ else{
     }
 let enmascarado = validator.maskify(ingresado);
 volver.innerHTML = `Estimado usuario su tarjeta N° ${enmascarado} es ${text}`;
-
-
-
 });
 const backButton = document.getElementById("buttonback");
+let ingresado =document.getElementById("idCardNumber").value;
 backButton.addEventListener("click", ()=>{
 container2.classList.remove("ocultar");
 container3.classList.add("ocultar");
+ingresado="";
 });
