@@ -31,13 +31,15 @@ if(resultado1===true){
 else{
     text = 'inválida';
     }
+
 let enmascarado = validator.maskify(ingresado);
-volver.innerHTML = `Estimado usuario su tarjeta N° ${enmascarado} es ${text}`;
+volver.innerHTML = `Estimado usuario su tarjeta N° ${enmascarado} es ${text}.`;
+ingresado = '';
 });
+
 const backButton = document.getElementById("buttonback");
-let ingresado =document.getElementById("idCardNumber").value;
-backButton.addEventListener("click", ()=>{
+backButton.addEventListener("click", ()=>{  
 container2.classList.remove("ocultar");
 container3.classList.add("ocultar");
-ingresado="";
+
 });

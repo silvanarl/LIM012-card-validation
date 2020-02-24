@@ -145,17 +145,15 @@ Estos puntos los presentarás en el `README.md`.
 
 Debe contener lo siguiente:
 
-* Un título con el nombre de tu proyecto.
-* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-* La imagen final de tu proyecto.
+* VALIDA TU TARJETA DE CRÉDITO
+* Esta página web permite a los usuarios saber la validéz de un número de tarjeta de crédito por medio del algoritmo de Luhn.
+* ![prototipo_final](img/prototipo_final.png)
 * Investigación UX:
-  1. Explicar quiénes son los usuarios y los objetivos en relación con el
-    producto.
-  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
-    usuarios.
-  3. Luego colocarás la foto de tu primer prototipo en papel.
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  5. Imagen del prototipo final.
+  1. Los usuarios son personas en general que hayan aceptado tarjetas de crédito vía telefónica y quieran averiguar si el número otorgado es válido.
+  2. La página web realiza la validación del número ingresado por el usuario basándose en el algoritmo de Luhn, esto le da al usuario la certeza de que el número es válido.
+  3. ![primer_prototipo](img/lo-fi_prototype.jpg)
+  4. Sobre todo el primer sprint y parte del segundo estuve trabajando en la funcionalidad de la página web, es esos momentos el feedback iba por esa parte, me estanque en la mitad de poner al código el algoritmo y eso me retraso un poco. En ese punto creo que debí fijarme mas posibilidades de las que entonces veía, así lo hubiera hecho mejor. También considero que puedo mejorar el aspecto visual de la web con CSS.
+  5. 
 
 #### Visualmente (HTML y CSS)
 
