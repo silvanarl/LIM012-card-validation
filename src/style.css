@@ -122,8 +122,8 @@ footer{
     font-size: 14pt;
     font: unset;
 }
-input[type=text]:focus{
-    border: 3px solid rgb(93, 153, 243);
+input[type=text]:invalid{
+    border: 3px solid rgb(252, 0, 0);
 }
 p{
     color:rgb(7, 19, 92);

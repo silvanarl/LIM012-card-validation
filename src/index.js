@@ -34,12 +34,11 @@ else{
 
 let enmascarado = validator.maskify(ingresado);
 volver.innerHTML = `Estimado usuario su tarjeta N° ${enmascarado} es ${text}.`;
-ingresado = '';
 });
 
 const backButton = document.getElementById("buttonback");
 backButton.addEventListener("click", ()=>{  
 container2.classList.remove("ocultar");
 container3.classList.add("ocultar");
-
+document.getElementById("idCardNumber").value='';
 });
