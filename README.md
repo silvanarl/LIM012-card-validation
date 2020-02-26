@@ -72,12 +72,12 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y
 * [✓] [Uso de condicionales](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/01-conditionals-and-loops)
 * [✓] [Uso de bucles](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/02-loops)
 * [✓] [Uso de funciones](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/javascript/02-flow-control/03-functions)
-* [✓] [Datos atómicos y estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
-* [✓] Utilizar ES Modules (`import` | `export`).
+* [] [Datos atómicos y estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
+* [] Utilizar ES Modules (`import` | `export`).
 
 ### Testing
 
-* [✓] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
+* [] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Git y GitHub
 
