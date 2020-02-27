@@ -8,19 +8,32 @@ body{
     font: status-bar;
 }
 .contenedorGeneral{
-    width: 90%;
+    width: 70%;
     max-width: 1000px;
     margin: 20px auto;
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(2, 1 fr);
+    /* grid-template-columns: 1fr; */
     grid-template-rows: repeat(3, auto);
 }
- .contenedorGeneral > div,
+.pantalla1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.pantalla1 h2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end:2; 
+}
+.pantalla1 p{
+    grid-auto-columns: 1;
+    grid-column-end: 2;
+}
+.contenedorGeneral > div,
 .contenedorGeneral .encabezado,
-.contenedorGeneral .pantalla1,
-.contenedorGeneral .ocultar,
-.contenedorGeneral .imagen,
 .contenedorGeneral .piedepagina{
     background:#ABA9BF;
     padding: 20px;
@@ -30,15 +43,13 @@ body{
  .contenedorGeneral .encabezado{
     background-color: #34113F;
     color: white;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1/2;
+    
 }
- .contenedorGeneral .pantalla1{
-    grid-column: span 2;
-    grid-row: span 2;   
-} 
 
 .contenedorGeneral .piedepagina{
+    grid-row-start: 3;
+    grid-row-end: 3;
     background-color: #868784;
     text-align: center;
     display: flex;
@@ -46,8 +57,9 @@ body{
     justify-content: center;
 }
 .contenedorGeneral .imagen{
-    grid-column: 3;
-    grid-row: 2/3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    /* align-content: right; */
 }  
 
 
